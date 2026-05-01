@@ -1,0 +1,22 @@
+[
+  {
+    "type": "sql_injection",
+    "pattern": "(union select|or 1=1|--|' or ')",
+    "severity": "high"
+  },
+  {
+    "type": "xss",
+    "pattern": "(<script>|javascript:|onerror=)",
+    "severity": "high"
+  },
+  {
+    "type": "directory_traversal",
+    "pattern": "(\\.\\./|\\.\\.\\\\)",
+    "severity": "high"
+  },
+  {
+    "type": "command_injection",
+    "pattern": "(;|\\||&&)",
+    "severity": "medium"
+  }
+]
