@@ -170,7 +170,7 @@ function App() {
       {/* SIDEBAR */}
       <div style={{ width: "240px", padding: "20px", backdropFilter: "blur(20px)", background: "rgba(15,23,42,0.7)", boxShadow: "0 0 30px rgba(124,58,237,0.2)", borderRight: "1px solid rgba(255,255,255,0.05)", zIndex: 1 }}>
         <h2 style={{ marginBottom: "30px", color: "#a78bfa" }}>🛡️ LogLens</h2>
-        {["dashboard", "alerts", "logs"].map(tab => (
+        {["dashboard"].map(tab => (
           <div key={tab} onClick={() => setActiveTab(tab)} style={{ padding: "12px", borderRadius: "10px", marginBottom: "10px", cursor: "pointer", background: activeTab === tab ? "linear-gradient(90deg,#7c3aed,#ec4899)" : "transparent", color: activeTab === tab ? "white" : "#9ca3af" }}>
             {tab.toUpperCase()}
           </div>
